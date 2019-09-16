@@ -1,0 +1,36 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "4CteEatrEIiOelQrQsxcZNxrRpI=",
+			"path": "github.com/lxn/walk",
+			"revision": "026611184a72972dd942f8d46d5bf7a4a863b884",
+			"revisionTime": "2019-08-29T15:03:29Z"
+		},
+		{
+			"checksumSHA1": "d2AaubjhCxoKonKcwAFvVOJKu3Y=",
+			"path": "github.com/lxn/walk/declarative",
+			"revision": "026611184a72972dd942f8d46d5bf7a4a863b884",
+			"revisionTime": "2019-08-29T15:03:29Z"
+		},
+		{
+			"checksumSHA1": "gJsrLGyyQVI8h8EzK4UJGTeQhh8=",
+			"path": "github.com/lxn/win",
+			"revision": "d1d36f0e4f482d3e75b5145232a2d5f50d76bac4",
+			"revisionTime": "2019-07-16T18:53:35Z"
+		},
+		{
+			"checksumSHA1": "aSRB7hpfVTSX2fx/Xo8+wr9WMNI=",
+			"path": "golang.org/x/sys/windows",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "YkiN4GIAur8FvnzjcRBo/WNG2mQ=",
+			"path": "gopkg.in/Knetic/govaluate.v3",
+			"revision": "d216395917cc49052c7c7094cf57f09657ca08a8",
+			"revisionTime": "2017-05-01T02:28:28Z"
+		}
+	],
+	"rootPath": "github.com/wpp/comments"
+}
