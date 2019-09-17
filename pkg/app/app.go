@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"net/http"
+	"net/url"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -32,7 +33,18 @@ type MainData struct {
 
 func (m *MainData) Start() {
 	m.SetUIEnable(false)
-	itemId := m.ItemId.Text()
+	itemLink := m.ItemId.Text()
+	u, err := url.Parse(itemLink)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	param, _ := url.ParseQuery(u.RawQuery)
+	itemId := param["goods_id"][0]
+	if len(itemId) == 0 {
+		fmt.Println("商品链接错误，无法解析商品id！")
+		return
+	}
 	minLength := m.MinLength.Text()
 	commentPrefix := m.CommentPrefix.Text()
 	commentSuffix := m.CommentSuffix.Text()

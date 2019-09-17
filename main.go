@@ -47,7 +47,7 @@ func main() {
 				Children: []Widget{
 					HSpacer{},
 					TextLabel{
-						Text: "商品ID：",
+						Text: "商品链接：",
 					},
 					LineEdit{
 						AssignTo: &m.ItemId,
